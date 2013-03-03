@@ -32,6 +32,38 @@ ol, ul {
   list-style: none;
 }
 
+em {
+  font-style: italic;
+}
+
+hr {
+  border: 0;
+  width: 80%;
+  height: 2px;
+  margin-bottom: 20px;
+  color: #ccc;
+  background-color: #ccc;
+}
+
+small {
+  font-size: 12px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+blockquote{
+  border-left: 2px solid #ccc;
+  padding-left: 20px;
+  font-family: Georgia, Serif;
+}
+
+blockquote cite {
+  display: block;
+  margin-left: 20px;
+}
+
 blockquote, q {
   quotes: none;
 }
@@ -70,6 +102,14 @@ section#wrap {
   width: 620px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+section#wrap ul {
+  margin: 0 0 20px 20px;
+}
+
+section#wrap ul li {
+  list-style: disc;
 }
 
 section#wrap > header {
