@@ -47,10 +47,15 @@ table {
   border-spacing: 0;
 }
 
-body {
+html {
   background: #171717 url('/assets/images/noise.jpg');
+}
+
+body {
+  background: url('/assets/images/background.jpg') no-repeat top center;
   font: 14px/20px 'Helvetica Neue', Arial, Helvetica, Sans-Serif;
   color: #eee;
+  min-height: 320px;
 }
 
 p {
@@ -59,4 +64,60 @@ p {
 
 a {
   color: #fff;
+}
+
+section#wrap {
+  width: 620px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section#wrap > header {
+  padding: 80px 0 40px;
+}
+
+section#wrap > header h1,
+section#wrap > header h2 {
+  text-indent: -9001px;
+}
+
+section#wrap > header a.logo {
+  display: block;
+  width: 304px;
+  height: 73px;
+  margin: 0 0 0 -22px;
+  background: url('/assets/images/logo.png') no-repeat;
+}
+
+section#wrap > header a.logo:focus {
+  position: relative;
+  top: 1px;
+}
+
+section#posts {
+  margin-bottom: 20px;
+}
+
+section#posts article {
+  margin-bottom: 5px;
+}
+
+section#posts article time {
+  color: #999;
+}
+
+footer {
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+footer a {
+  color: #999;
+}
+
+footer em {
+  position: relative;
+  top: 1px;
 }
