@@ -1,3 +1,6 @@
+name: Odin Dutton
+description: Odin Dutton's blog
+url: http://odindutton.com
 permalink: /:title/
 
 # GitHub Pages defaults:
