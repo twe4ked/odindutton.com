@@ -94,6 +94,26 @@ section#wrap > header a.logo:focus {
   top: 1px;
 }
 
+section#wrap > header span {
+  float: right;
+  margin: -72px 0 0 0;
+  color: #999;
+  font-size: 12px;
+}
+
+section#wrap > header span a {
+  display: inline-block;
+  width: 50px;
+  height: 13px;
+  padding: 1px 4px 2px;
+  position: relative;
+  top: 4px;
+  color: #999;
+  text-indent: -9001px;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.5) url('/assets/images/ennova.png') no-repeat bottom center;
+}
+
 section#posts {
   margin-bottom: 20px;
 }
