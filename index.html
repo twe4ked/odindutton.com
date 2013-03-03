@@ -1,0 +1,14 @@
+---
+layout: default
+site_index: true
+---
+
+<section id=posts>
+  {% for post in site.posts %}
+    <article>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      &ndash;
+      <time pubdate>{{ post.date | date: "%Y-%m-%d") }}</time>
+    </article>
+  {% endfor %}
+</section>

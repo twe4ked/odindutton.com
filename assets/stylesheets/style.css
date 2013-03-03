@@ -1,0 +1,13 @@
+body {
+  background: #171717 url('/assets/images/noise.jpg');
+  font: 14px/20px 'Helvetica Neue', Arial, Helvetica, Sans-Serif;
+  color: #eee;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+a {
+  color: #fff;
+}
