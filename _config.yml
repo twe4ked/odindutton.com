@@ -3,6 +3,8 @@ description: Odin Dutton's blog
 url: http://odindutton.com
 permalink: /:title/
 
+markdown: redcarpet
+
 # GitHub Pages defaults:
 safe: true
 lsi: false

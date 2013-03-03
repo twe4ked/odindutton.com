@@ -13,16 +13,18 @@ I found a [stackoverflow question](http://stackoverflow.com/questions/5649868/is
 
 Jack's script was almost perfect but I made a few tweaks and thought I would share it here.
 
-    #!/bin/bash
+``` sh
+#!/bin/bash
 
-    heroku pgbackups:capture --expire
+heroku pgbackups:capture --expire
 
-    function backup_url () {
-      heroku pgbackups | tail -n 1 | cut -d'|' -f 1
-    }
+function backup_url () {
+  heroku pgbackups | tail -n 1 | cut -d'|' -f 1
+}
 
-    echo 'Downloading backup...'
-    curl $(heroku pgbackups:url $backup_url) > temporary_backup.dump
-    echo 'Restoring backup...'
-    pg_restore --clean --no-acl --no-owner -h localhost -d DATABASE temporary_backup.dump
-    rm -f temporary_backup.dump
+echo 'Downloading backup...'
+curl $(heroku pgbackups:url $backup_url) > temporary_backup.dump
+echo 'Restoring backup...'
+pg_restore --clean --no-acl --no-owner -h localhost -d DATABASE temporary_backup.dump
+rm -f temporary_backup.dump
+```

@@ -11,8 +11,10 @@ For example use `bundle && say bundle complete` to let you know when a _bundle_ 
 
 I packaged a few commands up into aliases:
 
-    alias b='bundle && say bundle complete'
-    alias gph='git push heroku && say deployed on heroku'
+``` sh
+alias b='bundle && say bundle complete'
+alias gph='git push heroku && say deployed on heroku'
+```
 
 ### Taking it further
 
