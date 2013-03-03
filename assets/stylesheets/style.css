@@ -106,6 +106,111 @@ section#posts article time {
   color: #999;
 }
 
+section#posts article {
+  margin-bottom:5px;
+}
+
+section#posts article time {
+  color:#999;
+}
+
+section#posts article a {
+  padding: 2px;
+  margin: -2px;
+}
+
+article.post {
+  padding: 20px 20px 10px;
+  margin: 0 -20px;
+  background: #fff;
+  color: #111;
+}
+
+article.post a{color:#111;}
+
+article.post header {
+  margin-bottom:19px;
+}
+
+article.post header .meta {
+  color: #999;
+  font-size: 12px;
+}
+
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
+  margin-bottom: 10px;
+  font-weight: bold;
+  position: relative;
+}
+
+article h1 {
+  font-size: 28px;
+  margin-bottom: 3px;
+  line-height: 30px;
+  color: #333;
+}
+
+article h2 {
+  font-size: 24px;
+  top: 4px;
+  font-weight: normal;
+  padding-top: 10px;
+  border-top: 2px solid #ccc;
+  margin-bottom: 15px;
+}
+
+article h3 {
+  font-size: 20px;
+}
+
+article h4 {
+  font-size: 18px;
+}
+
+article h5 {
+  font-size: 16px;
+}
+
+article h6 {
+  font-size: 14px;
+}
+
+code, pre {
+  font-family: Menlo, 'DejaVu Sans Mono', Monaco, Courier, 'Courier New', monospace;
+}
+
+p code {
+  background: #eee;
+  padding: 1px 5px;
+}
+
+pre{
+  background: #002f4f;
+  color: #fefefe;
+  padding: 5px 20px;
+  margin: -7px -20px 20px;
+  overflow-x: auto;
+  border-top: 1px solid #000;
+}
+
+pre::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+pre::-webkit-scrollbar-thumb {
+  background-color: rgba(#000, 0.2);
+}
+
+pre::-webkit-scrollbar-track-piece {
+  background-color: rgba(#000, 0.1);
+}
+
 footer {
   font-size: 12px;
   color: #666;
