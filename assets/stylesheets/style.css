@@ -107,6 +107,35 @@ section#wrap > header span a {
   background: rgba(0, 0, 0, 0.5) url('/assets/images/ennova.png') no-repeat bottom center;
 }
 
+section#wrap > header ul#social {
+  margin: 10px 0 0 0;
+}
+
+ul#social li {
+  float: left;
+  margin-right: 10px;
+  list-style: none;
+}
+
+ul#social li a {
+  display: block;
+  width: 16px;
+  height: 16px;
+  text-indent: -9001px;
+  background: url('/assets/images/social.png') no-repeat;
+}
+
+ul#social li a.twitter  { background-position: 0 0; }
+ul#social li a.linkedin { background-position: -26px 0; }
+ul#social li a.dribbble { background-position: -52px 0; }
+ul#social li a.contact  { background-position: -78px 0; }
+ul#social li a.feed     { background-position: -104px 0; }
+
+ul#social li a:focus {
+  position: relative;
+  top: 1px;
+}
+
 section#posts {
   margin-bottom: 20px;
 }
