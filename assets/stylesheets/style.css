@@ -152,10 +152,6 @@ section#posts article {
   margin-bottom:5px;
 }
 
-section#posts article time {
-  color:#999;
-}
-
 section#posts article a {
   padding: 2px;
   margin: -2px;
@@ -179,15 +175,34 @@ article.post header .meta {
   font-size: 12px;
 }
 
-article h1,
-article h2,
-article h3,
-article h4,
-article h5,
-article h6 {
+h1, h2, h3, h4, h5, h6 {
   margin-bottom: 10px;
   font-weight: bold;
   position: relative;
+}
+
+h2 {
+  font-size: 24px;
+  top: 4px;
+  font-weight: normal;
+  padding-top: 10px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
 }
 
 article h1 {
@@ -198,28 +213,7 @@ article h1 {
 }
 
 article h2 {
-  font-size: 24px;
-  top: 4px;
-  font-weight: normal;
-  padding-top: 10px;
   border-top: 2px solid #ccc;
-  margin-bottom: 15px;
-}
-
-article h3 {
-  font-size: 20px;
-}
-
-article h4 {
-  font-size: 18px;
-}
-
-article h5 {
-  font-size: 16px;
-}
-
-article h6 {
-  font-size: 14px;
 }
 
 code, pre {
