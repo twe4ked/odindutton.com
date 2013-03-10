@@ -138,11 +138,25 @@ ul#social li a:active {
   top: 1px;
 }
 
-section#posts {
-  margin-bottom: 20px;
+section #projects article span {
+  color: #999;
 }
 
-section#posts article {
+h2.projects {
+  text-shadow: 0 2px 0 #000;
+}
+
+h2.projects span.amp {
+  font-size: 26px;
+}
+
+section#posts,
+section#projects {
+  margin-bottom: 30px;
+}
+
+section#posts article,
+section#projects article {
   margin-bottom: 5px;
 }
 
@@ -150,7 +164,8 @@ section#posts article time {
   color: #999;
 }
 
-section#posts article {
+section#posts article,
+section#projects article {
   margin-bottom:5px;
 }
 
