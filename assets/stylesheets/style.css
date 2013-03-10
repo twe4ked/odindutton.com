@@ -82,7 +82,7 @@ section#wrap > header a.logo {
   background: url('/assets/images/logo.png') no-repeat;
 }
 
-section#wrap > header a.logo:focus {
+section#wrap > header a.logo:active {
   position: relative;
   top: 1px;
 }
@@ -131,7 +131,7 @@ ul#social li a.dribbble { background-position: -52px 0; }
 ul#social li a.contact  { background-position: -78px 0; }
 ul#social li a.feed     { background-position: -104px 0; }
 
-ul#social li a:focus {
+ul#social li a:active {
   position: relative;
   top: 1px;
 }
