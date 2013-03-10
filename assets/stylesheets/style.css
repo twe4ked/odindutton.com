@@ -6,7 +6,9 @@ html {
 
 body {
   background: url('/assets/images/background.jpg') no-repeat top center;
-  font: 14px/20px 'Helvetica Neue', Arial, Helvetica, Sans-Serif;
+  font-family: 'Helvetica Neue', Arial, Helvetica, Sans-Serif;
+  font-size: 14px;
+  line-height: 20px;
   color: #eee;
   min-height: 320px;
 }
@@ -164,29 +166,32 @@ article.post {
   color: #111;
 }
 
-article.post a{color:#111;}
+article.post a {
+  color: #111;
+}
 
 article.post header {
-  margin-bottom:19px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 article.post header .meta {
   color: #999;
   font-size: 12px;
+  margin: -14px 0 14px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-weight: bold;
   position: relative;
+  font-family: 'Hoefler Text', 'Baskerville old face', Garamond, 'Times New Roman', serif;
 }
 
 h2 {
   font-size: 24px;
   top: 4px;
   font-weight: normal;
-  padding-top: 10px;
-  margin-bottom: 15px;
 }
 
 h3 {
@@ -207,14 +212,10 @@ h6 {
 
 article h1 {
   font-size: 28px;
-  margin-bottom: 3px;
   line-height: 30px;
   color: #333;
 }
 
-article h2 {
-  border-top: 2px solid #ccc;
-}
 
 code, pre {
   font-family: Menlo, 'DejaVu Sans Mono', Monaco, Courier, 'Courier New', monospace;
