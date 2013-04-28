@@ -233,7 +233,7 @@ article h1 {
 }
 
 code, pre {
-  font-family: Menlo, 'DejaVu Sans Mono', Monaco, Courier, 'Courier New', monospace;
+  font-family: Monaco, monospace;
 }
 
 p code {
