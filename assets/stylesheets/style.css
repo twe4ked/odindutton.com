@@ -242,12 +242,13 @@ p code {
 }
 
 pre{
-  background: #002f4f;
-  color: #fefefe;
+  background: #eee;
+  color: #222;
   padding: 5px 40px;
   margin: -7px -40px 20px;
   overflow-x: auto;
-  border-top: 1px solid #000;
+  border: 1px solid #ddd;
+  border-width: 1px 0;
 }
 
 pre::-webkit-scrollbar {
