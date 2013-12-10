@@ -1,11 +1,10 @@
 @import url('/assets/stylesheets/reset.css');
 
 html {
-  background: #171717 url('/assets/images/noise.jpg');
+  background: #171717;
 }
 
 body {
-  background: url('/assets/images/background.jpg') no-repeat top center;
   font-family: 'Helvetica Neue', Arial, Helvetica, Sans-Serif;
   font-size: 14px;
   line-height: 20px;
@@ -71,23 +70,10 @@ section#wrap > header {
   padding: 80px 0 40px;
 }
 
-section#wrap > header h1,
-section#wrap > header h2 {
-  text-indent: -9001px;
+section#wrap > header a {
+  text-decoration: none;
 }
 
-section#wrap > header a.logo {
-  display: block;
-  width: 304px;
-  height: 73px;
-  margin: 0 0 0 -22px;
-  background: url('/assets/images/logo.png') no-repeat;
-}
-
-section#wrap > header a.logo:active {
-  position: relative;
-  top: 1px;
-}
 
 section#wrap > header span {
   float: right;
@@ -202,6 +188,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   position: relative;
   font-family: 'Hoefler Text', 'Baskerville old face', Garamond, 'Times New Roman', serif;
+}
+
+h1 {
+  font-size: 48px;
 }
 
 h2 {
