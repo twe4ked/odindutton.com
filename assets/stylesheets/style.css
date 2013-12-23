@@ -78,7 +78,8 @@ section#wrap > header h2 {
   color: #666;
 }
 
-section#wrap > header h2 a.work {
+section#wrap > header h2 span,
+section#wrap > header h2 span a {
   color: #999;
 }
 
