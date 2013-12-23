@@ -9,8 +9,6 @@ site_index: true
   {% for post in site.posts %}
     <article>
       <a href="{{ post.url }}">{{ post.title }}</a>
-      &ndash;
-      <time pubdate>{{ post.date | date: "%Y-%m-%d") }}</time>
     </article>
   {% endfor %}
 </section>
