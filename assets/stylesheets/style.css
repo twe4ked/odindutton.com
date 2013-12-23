@@ -1,14 +1,13 @@
 @import url('/assets/stylesheets/reset.css');
 
 html {
-  background: #171717;
+  background: #fff;
 }
 
 body {
   font-family: 'Helvetica Neue', Arial, Helvetica, Sans-Serif;
-  font-size: 14px;
-  line-height: 20px;
-  color: #eee;
+  font-size: 18px;
+  line-height: 140%;
   min-height: 320px;
 }
 
@@ -17,7 +16,7 @@ p {
 }
 
 a {
-  color: #fff;
+  color: #000;
 }
 
 em {
@@ -44,7 +43,6 @@ strong {
 blockquote{
   border-left: 2px solid #ccc;
   padding-left: 20px;
-  font-family: Georgia, Serif;
 }
 
 blockquote cite {
@@ -55,7 +53,6 @@ blockquote cite {
 section#wrap {
   width: 620px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 section#wrap ul {
@@ -67,36 +64,27 @@ section#wrap ul li {
 }
 
 section#wrap > header {
+  text-align: center;
   padding: 80px 0 40px;
+  margin-bottom: 20px;
 }
 
 section#wrap > header a {
   text-decoration: none;
 }
 
-
-section#wrap > header span {
-  float: right;
-  margin: -72px 0 0 0;
-  color: #999;
-  font-size: 12px;
+section#wrap > header h2 {
+  font-size: 20px;
+  color: #666;
 }
 
-section#wrap > header span a {
-  display: inline-block;
-  width: 50px;
-  height: 13px;
-  padding: 1px 4px 2px;
-  position: relative;
-  top: 4px;
+section#wrap > header h2 a.work {
   color: #999;
-  text-indent: -9001px;
-  text-decoration: none;
-  background: rgba(0, 0, 0, 0.5) url('/assets/images/ennova.png') no-repeat bottom center;
 }
 
 section#wrap > header ul#social {
-  margin: 10px 0 0 0;
+  margin: 10px auto;
+  width: 158px;
 }
 
 ul#social li {
@@ -105,31 +93,31 @@ ul#social li {
   list-style: none;
 }
 
+ul#social li:last-child {
+  margin-right: 0;
+}
+
 ul#social li a {
   display: block;
-  width: 16px;
-  height: 16px;
+  width: 32px;
+  height: 32px;
   text-indent: -9001px;
   background: url('/assets/images/social.png') no-repeat;
+  background-size: 143px 69px;
 }
 
 ul#social li a.twitter  { background-position: 0 0; }
-ul#social li a.dribbble { background-position: -52px 0; }
-ul#social li a.contact  { background-position: -78px 0; }
-ul#social li a.feed     { background-position: -104px 0; }
-ul#social li a.github   { background-position: -130px 0; }
+ul#social li a.github   { background-position: -37px 0; }
+ul#social li a.contact  { background-position: -74px 0; }
+ul#social li a.feed     { background-position: -111px 0; }
 
 ul#social li a:active {
   position: relative;
   top: 1px;
 }
 
-section #projects article span {
-  color: #999;
-}
-
-h2.projects {
-  text-shadow: 0 2px 0 #000;
+ul#social li a:hover {
+  background-position-y: -37px;
 }
 
 h2.projects span.amp {
@@ -147,7 +135,7 @@ section#projects article {
 }
 
 section#posts article time {
-  color: #999;
+  white-space: nowrap;
 }
 
 section#posts article,
@@ -161,15 +149,11 @@ section#posts article a {
 }
 
 article.post {
-  padding: 40px 40px 20px;
-  margin: 0 -40px 20px;
   background: #fff;
-  color: #111;
   border-radius: 2px;
 }
 
 article.post a {
-  color: #111;
 }
 
 article.post header {
@@ -178,16 +162,14 @@ article.post header {
 }
 
 article.post header .meta {
-  color: #999;
   font-size: 12px;
   margin: -14px 0 14px;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 20px;
-  font-weight: bold;
   position: relative;
-  font-family: 'Hoefler Text', 'Baskerville old face', Garamond, 'Times New Roman', serif;
+  font-family: Georgia, Times, 'Times New Roman', serif;
 }
 
 h1 {
@@ -219,7 +201,6 @@ h6 {
 article h1 {
   font-size: 28px;
   line-height: 30px;
-  color: #333;
 }
 
 code, pre {
@@ -233,9 +214,8 @@ p code {
 
 pre {
   background: #eee;
-  color: #222;
-  padding: 5px 40px;
-  margin: -7px -40px 20px;
+  padding: 5px 20px;
+  margin: -7px 0 20px;
   overflow-x: auto;
   border: 1px solid #ddd;
   border-width: 1px 0;
@@ -255,14 +235,13 @@ pre::-webkit-scrollbar-track-piece {
 }
 
 footer {
-  font-size: 12px;
-  color: #666;
   text-align: center;
   margin: 0 0 20px;
 }
 
-footer a {
+footer small {
   color: #999;
+  font-size: 14px;
 }
 
 footer em {
