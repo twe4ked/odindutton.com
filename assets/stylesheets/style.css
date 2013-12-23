@@ -33,7 +33,7 @@ hr {
 }
 
 small {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 strong {
@@ -237,11 +237,7 @@ pre::-webkit-scrollbar-track-piece {
 footer {
   text-align: center;
   margin: 0 0 20px;
-}
-
-footer small {
   color: #999;
-  font-size: 14px;
 }
 
 footer em {
