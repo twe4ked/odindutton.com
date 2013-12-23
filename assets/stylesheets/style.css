@@ -162,7 +162,8 @@ article.post header {
 }
 
 article.post header .meta {
-  font-size: 12px;
+  font-size: 14px;
+  color: #999;
   margin: -14px 0 14px;
 }
 
