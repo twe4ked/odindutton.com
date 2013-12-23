@@ -215,12 +215,9 @@ p code {
 }
 
 pre {
-  background: #eee;
   padding: 5px 20px;
   margin: -7px 0 20px;
   overflow-x: auto;
-  border: 1px solid #ddd;
-  border-width: 1px 0;
 }
 
 pre::-webkit-scrollbar {
