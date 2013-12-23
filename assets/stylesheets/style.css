@@ -215,22 +215,9 @@ p code {
 }
 
 pre {
-  padding: 5px 20px;
+  padding: 10px 12px 8px;
   margin: -7px 0 20px;
   overflow-x: auto;
-}
-
-pre::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-
-pre::-webkit-scrollbar-thumb {
-  background-color: rgba(#000, 0.2);
-}
-
-pre::-webkit-scrollbar-track-piece {
-  background-color: rgba(#000, 0.1);
 }
 
 footer {
