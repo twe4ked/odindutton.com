@@ -212,6 +212,7 @@ code, pre {
 p code {
   background: #eee;
   padding: 1px 5px;
+  font-size: 16px;
 }
 
 pre {
