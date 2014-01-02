@@ -26,7 +26,7 @@ em {
 hr {
   border: 0;
   width: 80%;
-  height: 2px;
+  height: 1px;
   margin-bottom: 20px;
   color: #ccc;
   background-color: #ccc;
@@ -41,7 +41,7 @@ strong {
 }
 
 blockquote{
-  border-left: 2px solid #ccc;
+  border-left: 1px solid #ccc;
   padding-left: 20px;
 }
 
