@@ -1,9 +1,5 @@
 @import url('/assets/stylesheets/reset.css');
 
-html {
-  background: #fff;
-}
-
 body {
   font-family: 'Helvetica Neue', Arial, Helvetica, Sans-Serif;
   font-size: 18px;
@@ -161,7 +157,6 @@ section#posts article a {
 }
 
 article.post {
-  background: #fff;
   border-radius: 2px;
 }
 
