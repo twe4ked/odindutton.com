@@ -1,0 +1,65 @@
+==================================================================
+https://keybase.io/odin
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://odindutton.com
+  * I am odin (https://keybase.io/odin) on keybase.
+  * I have a public key with fingerprint E7CF B17B 6556 F44C 4D10  4B26 1ED7 776D C9D6 B110
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "e7cfb17b6556f44c4d104b261ed7776dc9d6b110",
+            "host": "keybase.io",
+            "key_id": "1ed7776dc9d6b110",
+            "uid": "a8c8ad9633e2847c658501debb94d100",
+            "username": "odin"
+        },
+        "service": {
+            "hostname": "odindutton.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1395974755,
+    "expire_in": 157680000,
+    "prev": "9d9ca6c437a0f30aa3e82bc29a09452b4d8d9de84db5d9d2e936ebaba7c78267",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v0.1.1
+Comment: https://keybase.io/crypto
+
+yMHvAnicbVFrSFRZHB8zR1ScJBwi0j5cM2kZ7d657/kQVsTmY118sBKV0z3nntGL
+672zM3fGxyDjqrvIwLjjopUSuIMui0bUollGpOVuRC+wFAr0g0VhqPn6ktuKnhkK
++tD5cs/9Pf+H/z/JsYbEmL/aJgKdavupmEfjyx5DKfMK+gigyfWEzUdUo+jHoaiV
+yOV0KapO2AjEQwegeMCxLOdgGMjIFMkAK0chmed5ToaizAGKIgkLUaW5Iw4cAyQ3
+ylE0jOEfuyJj9Ct6T5SQBChIssjRNLIKDA85VmBJSkYAiJGuqNCNXKpUg7BakxWV
+aLQQGPEqECO+aO0XrOzRdU3NgVoNdjpdmq5B7UfMVem60xax6vXOiLYWAfunFDvA
+NvxqbPAil1vRVMJGYSXUlUgsRYusyDM8y1oIVOdUXMiOh7BRLM8JJD6RGuTFkaIs
+QomDDM1LpIMmJYlGghVAqyiRIsNaASMLsigjgZEBiy9WJNIcAhKQeMgLVo7H/W70
+k6oRNhqPKVXiSLdSqUq6x4WIxnvjZ3YaYhINxrgdkb0ZEhNSPm/zm1/jt/yjwbKR
+ly3LvXl7Cv6cDM8u7B99cW5pYDB8fizN95/zetGHp2zL4YXWemOo9Lvm3LJy/9pU
+3cgPA0ttD3IZ85GS4EDg//Tiq40Tte8e5sPmqbR4Nj/79Qmv862FTLiUeXcx6+fk
+Pp65v5L3cfZ0v/nW9F6xtS/zeUqP8d/3FzvW9fWk5iAcKh6ZnDGxFbEZj3vCoDCu
+usucupG2qzd0sqLi2OJx4/zw991zG6b5g9PXfs+e2QoUhn9ZS//tUMflN6v+1O4b
+JftMfwyvwKSurCc35wrsTX5TQuxGw+rfm+XzZ82bDSFHSv+BseDU2GLntxlXbg/O
+tIeP7i66cKcp9GwosA3JORlC
+=1szl
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/odin
+
+==================================================================

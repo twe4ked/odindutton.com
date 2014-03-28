@@ -5,6 +5,8 @@ permalink: /:title/
 
 markdown: redcarpet
 
+include: [.well-known]
+
 # GitHub Pages defaults:
 safe: true
 lsi: false
