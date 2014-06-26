@@ -23,16 +23,19 @@
       </ul>
       <a href="https://github.com/twe4ked/odindutton.com/commit/{{ site.github.build_revision }}" class=ref>{{ site.github.build_revision | truncate: 7, '' }}</a>
     </header>
-    <section id=wrap>
-      {{ content }}
+    <div id=cover></div>
+    <section id=content>
+      <section id=wrap>
+        {{ content }}
+      </section>
+      <footer>
+        <small>
+          &copy; Copyright {{ site.time | date: "%Y" }}
+          <em>&bull;</em>
+          Odin Dutton
+        </small>
+      </footer>
     </section>
-    <footer>
-      <small>
-        &copy; Copyright {{ site.time | date: "%Y" }}
-        <em>&bull;</em>
-        Odin Dutton
-      </small>
-    </footer>
     <script type="text/javascript">
       var _gauges = _gauges || [];
       (function() {
