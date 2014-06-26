@@ -8,6 +8,8 @@ markdown: redcarpet
 include: [.well-known]
 
 # GitHub Pages defaults:
-safe: true
 lsi: false
 pygments: true
+
+gems:
+  - jekyll-sitemap
