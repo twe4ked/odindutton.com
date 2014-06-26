@@ -81,7 +81,7 @@ body > header h2 span a {
 }
 
 body > header a.ref {
-  font-size: 14px;
+  font: 12px/14px Monaco, monospace;
   position: absolute;
   top: 10px;
   right: 20px;
@@ -90,11 +90,13 @@ body > header a.ref {
 
 body > header a.ref:hover {
   color: #666;
-  text-decoration: underline;
+  border-bottom: 1px solid #999;
 }
 
 body > header a.ref:before {
+  font-size: 14px;
   content: '\21aa';
+  padding-right: 4px;
 }
 
 body > header ul#social {
