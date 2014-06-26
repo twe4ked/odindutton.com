@@ -57,40 +57,27 @@ blockquote cite {
   margin-left: 20px;
 }
 
-section#wrap {
-  width: 620px;
-  margin: 0 auto;
-}
-
-section#wrap ul {
-  margin: 0 0 20px 20px;
-}
-
-section#wrap ul li {
-  list-style: disc;
-}
-
-section#wrap > header {
+body > header {
   text-align: center;
   padding: 80px 0 40px;
   margin-bottom: 20px;
 }
 
-section#wrap > header a {
+body > header a {
   text-decoration: none;
 }
 
-section#wrap > header h2 {
+body > header h2 {
   font-size: 20px;
   color: #666;
 }
 
-section#wrap > header h2 span,
-section#wrap > header h2 span a {
+body > header h2 span,
+body > header h2 span a {
   color: #999;
 }
 
-section#wrap > header a.ref {
+body > header a.ref {
   font-size: 14px;
   position: absolute;
   top: 10px;
@@ -98,16 +85,16 @@ section#wrap > header a.ref {
   color: #999;
 }
 
-section#wrap > header a.ref:hover {
+body > header a.ref:hover {
   color: #666;
   text-decoration: underline;
 }
 
-section#wrap > header a.ref:before {
+body > header a.ref:before {
   content: '\21aa';
 }
 
-section#wrap > header ul#social {
+body > header ul#social {
   margin: 10px auto;
   width: 158px;
 }
@@ -143,6 +130,19 @@ ul#social li a:active {
 
 ul#social li a:hover {
   background-position-y: -37px;
+}
+
+section#wrap {
+  width: 620px;
+  margin: 0 auto;
+}
+
+section#wrap ul {
+  margin: 0 0 20px 20px;
+}
+
+section#wrap ul li {
+  list-style: disc;
 }
 
 h2.projects span.amp {

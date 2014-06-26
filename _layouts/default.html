@@ -7,23 +7,23 @@
     <script src=/assets/javascripts/application.js></script>
   </head>
   <body>
+    <header>
+      <a href=/><h1>Odin Dutton</h1></a>
+      <h2>
+        Barefoot Web Developer
+        <span>
+          @ Locating...
+        </span>
+      </h2>
+      <ul id=social>
+        <li><a href=http://twitter.com/twe4ked class=twitter>Twitter</a></li>
+        <li><a href=https://github.com/twe4ked class=github>Github</a></li>
+        <li><a href=mailto:m%65%2bw%65bsite%40%6fdin&#100;utt%6fn.%63om class=contact>Contact</a></li>
+        <li><a href=/feed class=feed>Feed</a></li>
+      </ul>
+      <a href="https://github.com/twe4ked/odindutton.com/commit/{{ site.github.build_revision }}" class=ref>{{ site.github.build_revision | truncate: 7, '' }}</a>
+    </header>
     <section id=wrap>
-      <header>
-        <a href=/><h1>Odin Dutton</h1></a>
-        <h2>
-          Barefoot Web Developer
-          <span>
-            @ Locating...
-          </span>
-        </h2>
-        <ul id=social>
-          <li><a href=http://twitter.com/twe4ked class=twitter>Twitter</a></li>
-          <li><a href=https://github.com/twe4ked class=github>Github</a></li>
-          <li><a href=mailto:m%65%2bw%65bsite%40%6fdin&#100;utt%6fn.%63om class=contact>Contact</a></li>
-          <li><a href=/feed class=feed>Feed</a></li>
-        </ul>
-        <a href="https://github.com/twe4ked/odindutton.com/commit/{{ site.github.build_revision }}" class=ref>{{ site.github.build_revision | truncate: 7, '' }}</a>
-      </header>
       {{ content }}
     </section>
     <footer>
