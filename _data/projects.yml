@@ -16,4 +16,4 @@
 
 - name: Service Status
   url: http://servicestatusapp.com
-  description: A set and forget app to monitor the status of TransLink train lines in Brisbane, Australia
+  description: A set and forget app to monitor TransLink train status
