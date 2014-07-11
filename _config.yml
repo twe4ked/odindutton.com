@@ -9,7 +9,7 @@ include: [.well-known]
 
 # GitHub Pages defaults:
 lsi: false
-pygments: true
+highlighter: pygments
 
 gems:
   - jekyll-sitemap
