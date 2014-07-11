@@ -1,0 +1,19 @@
+- name: fresh
+  url: https://github.com/freshshell/fresh
+  description: Bundler for your dot files
+
+- name: rspec-nc
+  url: https://github.com/twe4ked/rspec-nc
+  description: RSpec formatter for Mountain Lion's Notification Center
+
+- name: vim-diff-toggle
+  url: https://github.com/twe4ked/vim-diff-toggle
+  description: Vim plugin to speed up editing diff files
+
+- name: housemates
+  url: http://housemat.es
+  description: Organize your share house
+
+- name: Service Status
+  url: http://servicestatusapp.com
+  description: A set and forget app to monitor the status of TransLink train lines in Brisbane, Australia
