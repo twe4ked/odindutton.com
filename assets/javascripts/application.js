@@ -2,7 +2,7 @@ window.onload = function(event) {
   span = document.querySelectorAll('header h2 span')[0]
 
   request = new XMLHttpRequest()
-  request.open('GET', 'http://human.odin.bz/location.json', true)
+  request.open('GET', 'http://human.odin.bz/location.json')
   request.onerror = function() {
     span.textContent = '@ Earth'
   }
