@@ -11,5 +11,9 @@ include: [.well-known]
 lsi: false
 highlighter: pygments
 
+# jekyll-github-metadata
+repository: twe4ked/odindutton.com
+
 gems:
   - jekyll-sitemap
+  - jekyll-github-metadata
