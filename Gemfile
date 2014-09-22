@@ -2,7 +2,12 @@ source 'https://rubygems.org'
 
 require 'json'
 require 'open-uri'
-versions = JSON.parse(open('https://pages.github.com/versions.json').read)
+
+versions = begin
+  JSON.parse(open('https://pages.github.com/versions.json').read)
+rescue SocketError
+  require 'github-pages'; {'github-pages' => GitHubPages::VERSION}
+end
 
 gem 'github-pages', versions['github-pages']
 gem 'redcarpet'
