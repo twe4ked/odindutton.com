@@ -17,3 +17,4 @@ repository: twe4ked/odindutton.com
 gems:
   - jekyll-sitemap
   - jekyll-github-metadata
+  - jekyll-redirect-from

@@ -1,6 +1,7 @@
 ---
 title: Rediscovering Your Old iTunes Music
 layout: post
+redirect_from: itunes/
 ---
 
 <style>

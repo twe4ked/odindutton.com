@@ -1,6 +1,7 @@
 ---
 title: Command Line Tasks that Announce when they're Complete
 layout: post
+redirect_from: say/
 ---
 
 Just a quick post to start things off; I've recently stumbled across a great command line tip, simply append `&& say command complete` to the of your commands to have OS X tell you when it's complete.
