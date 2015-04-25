@@ -9,7 +9,12 @@ rescue SocketError
   require 'github-pages'; {'github-pages' => GitHubPages::VERSION}
 end
 
-gem 'github-pages', versions['github-pages']
-gem 'redcarpet'
-gem 'jekyll-sitemap'
+%w[
+  github-pages
+  redcarpet
+  jekyll-sitemap
+].each do |name|
+  gem name, versions.fetch(name)
+end
+
 gem 'jekyll-github-metadata'
