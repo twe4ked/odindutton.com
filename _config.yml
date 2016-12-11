@@ -8,6 +8,10 @@ include: [.well-known]
 # GitHub Pages defaults:
 lsi: false
 highlighter: rouge
+markdown: kramdown
+
+kramdown:
+  parse_block_html: true
 
 # jekyll-github-metadata
 repository: twe4ked/odindutton.com
