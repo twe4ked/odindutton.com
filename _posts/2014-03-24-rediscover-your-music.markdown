@@ -5,11 +5,11 @@ redirect_from: itunes/
 ---
 
 <style>
-article.post img {
- margin-left: -65px;
- box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
- border-radius: 4px;
-}
+  article.post img {
+   margin-left: -65px;
+   box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+   border-radius: 4px;
+  }
 </style>
 
 I've had the same iTunes library since 2008 when I purchased my first MacBook.
@@ -19,7 +19,7 @@ I've devised a Smart Playlist for finding songs I've forgotten about.
 
 I call this playlist _Old_.
 
-<img src=/assets/images/posts/rediscover-your-music/itunes.png width=750 />
+<img src="/assets/images/posts/rediscover-your-music/itunes.png" width="750" />
 
 Match _all_ of the following rules:
 

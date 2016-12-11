@@ -5,14 +5,14 @@ redirect_from: anybar/
 ---
 
 <style>
-article.post img { margin-left: 25px; }
+  article.post img { margin-left: 25px; }
 </style>
 
 > AnyBar is a small indicator for your menubar that does one simple thing: it displays color dot. What color means is up to you. When to change color is also up to you.
 
 Knowing when your internet drops out before you open your browser and work it out for yourself can be very handy.
 
-<img src=/assets/images/posts/anybar-internet-status/menubar.png width=569 />
+<img src="/assets/images/posts/anybar-internet-status/menubar.png" width="569" />
 
 When I first heard about [AnyBar] that was the first use case I thought of.<br/>
 I wrote a simple [script] using `host` to check if my computer can access Google to keep an eye on my connection status.
@@ -25,7 +25,9 @@ I wrote a simple [script] using `host` to check if my computer can access Google
 
 Put the following [script] somewhere on your machine an `chmod +x` it.
 
-<div class=filename>~/bin/anybar-internet</div>
+<p class="filename">
+  ~/bin/anybar-internet
+</p>
 ``` sh
 quit() {
   echo -n question | $ANYBAR
@@ -50,7 +52,9 @@ I decided to keep it running in the background using launchd ([tutorial](http://
 
 Replace `$USER` with your username and put it in `~/Library/LaunchAgents/`:
 
-<div class=filename>~/Library/LaunchAgents/com.twe4ked.anybar-internet.plist</div>
+<p class="filename">
+  ~/Library/LaunchAgents/com.twe4ked.anybar-internet.plist
+</p>
 ``` xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
