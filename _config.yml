@@ -7,7 +7,7 @@ include: [.well-known]
 
 # GitHub Pages defaults:
 lsi: false
-highlighter: rogue
+highlighter: rouge
 
 # jekyll-github-metadata
 repository: twe4ked/odindutton.com
