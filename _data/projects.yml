@@ -1,3 +1,7 @@
+- name: Remember
+  url: https://rememberlink.com
+  description: Remember your bookmarks
+
 - name: fresh
   url: https://github.com/freshshell/fresh
   description: Bundler for your dot files
@@ -9,6 +13,10 @@
 - name: vim-diff-toggle
   url: https://github.com/twe4ked/vim-diff-toggle
   description: Vim plugin to speed up editing diff files
+
+- name: simple_twitter_oauth
+  url: https://github.com/twe4ked/simple_twitter_oauth
+  description: A really simple Twitter OAuth Ruby Gem
 
 - name: housemates
   url: http://housemat.es
