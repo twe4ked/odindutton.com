@@ -11,7 +11,6 @@ end
 
 %w[
   github-pages
-  redcarpet
   jekyll-sitemap
 ].each do |name|
   gem name, versions.fetch(name)
