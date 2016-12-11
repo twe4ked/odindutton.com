@@ -18,10 +18,18 @@ title: Barefoot Web Developer
 
 <section id=projects>
   {% for project in site.data.projects %}
-    <article>
-      <a href="{{ project.url }}">{{ project.name }}</a>
+    {% if project.deprecated %}
+    <article class="deprecated" title="Deprecated">
+      {{ project.name }}
       &ndash;
       <span>{{ project.description }}</span>
     </article>
+    {% else %}
+      <article>
+        <a href="{{ project.url }}">{{ project.name }}</a>
+        &ndash;
+        <span>{{ project.description }}</span>
+      </article>
+    {% endif %}
   {% endfor %}
 </section>

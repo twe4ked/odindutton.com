@@ -13,7 +13,9 @@
 - name: housemates
   url: http://housemat.es
   description: Organize your share house
+  deprecated: true
 
 - name: Service Status
   url: http://servicestatusapp.com
   description: A set and forget app to monitor TransLink train status
+  deprecated: true
