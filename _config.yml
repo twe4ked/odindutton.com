@@ -1,4 +1,4 @@
-name: Odin Dutton
+title: Odin Dutton
 description: "Odin Dutton's blog"
 url: http://odindutton.com
 permalink: /:title/
@@ -16,7 +16,7 @@ kramdown:
 # jekyll-github-metadata
 repository: twe4ked/odindutton.com
 
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-github-metadata
   - jekyll-redirect-from
