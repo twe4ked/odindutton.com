@@ -4,6 +4,9 @@ layout: post
 redirect_from: rust/
 ---
 
+This is a summary of most of the Rust projects I've worked on in my spare time
+over the last few years.
+
 ## 2020
 
 - [gitsha](https://github.com/twe4ked/gitsha) – This was started some time in
