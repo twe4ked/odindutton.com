@@ -15,6 +15,8 @@ over the last few years.
 - [vgm](https://github.com/twe4ked/vgm) – A
   [VGM](https://vgmrips.net/wiki/VGM_Specification) file parser. Only supports
   parsing the headers, not actually playing music at this point.
+- [hl][hl] – CLI tool to highlight patterns in text. Ported from
+  [Crystal][crystal] to Rust.
 
 ## 2019
 
@@ -44,9 +46,6 @@ over the last few years.
 - [tin-whistle][tin-whistle] – Takes ABC notation from STDIN and prints out tin
   whistle diagrams. [Ported][tin-whistle-1] from [Crystal][crystal] to Rust.
 
-[tin-whistle-1]: https://github.com/twe4ked/tin-whistle/commit/106a72462c8b4861305c08e7a7c3124bfaff4d85
-[crystal]: https://crystal-lang.org/
-
 ## 2018
 
 - [rs8080](https://github.com/twe4ked/rs8080) – The beginnings of an 8080
@@ -55,11 +54,9 @@ over the last few years.
 - [lc3](https://github.com/twe4ked/lc3) – An LC-3 emulator. This is a good
   starting place for playing with emulators.
 
-## 2017
-
-- [hl][hl] – CLI tool to highlight patterns in text.
-
 [oos]: https://github.com/twe4ked/oos
 [hl]: https://github.com/twe4ked/hl
 [hash-data]: https://github.com/twe4ked/hash-data
 [tin-whistle]: https://github.com/twe4ked/tin-whistle
+[tin-whistle-1]: https://github.com/twe4ked/tin-whistle/commit/106a72462c8b4861305c08e7a7c3124bfaff4d85
+[crystal]: https://crystal-lang.org/
