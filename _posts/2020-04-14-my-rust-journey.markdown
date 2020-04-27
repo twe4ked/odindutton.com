@@ -23,8 +23,8 @@ over the last few years.
 - [gol](https://github.com/twe4ked/gol) – Game of Life.
 - [chip-8](https://github.com/twe4ked/chip-8) – This is an easier emulator to
   build than the LC-3 as the intructions are easier to parse.
-- [prompt](https://github.com/twe4ked/prompt) – Inspired by projects such as
-  [starship](TODO), this is a prompt build in Rust to be very fast and easy to
+- [aurora](https://github.com/twe4ked/aurora) – Inspired by projects such as
+  [starship](https://github.com/starship/starship), this is a prompt built in Rust to be very fast and easy to
   configure.
 - [mandelbrot-set](https://github.com/twe4ked/mandelbrot-set) – The mandelbrot
   set fractal.
