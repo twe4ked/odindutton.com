@@ -17,6 +17,9 @@ over the last few years.
   parsing the headers, not actually playing music at this point.
 - [hl][hl] – CLI tool to highlight patterns in text. Ported from
   [Crystal][crystal] to Rust.
+- [Rays](https://github.com/twe4ked/rays) – [Ray Tracing in One Weekend][rtiow]
+
+[rtiow]: https://raytracing.github.io/books/RayTracingInOneWeekend.html
 
 ## 2019
 
