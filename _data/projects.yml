@@ -1,3 +1,7 @@
+- name: Cocktail Ratios
+  url: https://cocktailratios.com
+  description: Simple, good, cocktail ratios
+
 - name: Remember
   url: https://rememberlink.com
   description: Remember your bookmarks
