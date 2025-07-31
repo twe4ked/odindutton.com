@@ -9,7 +9,10 @@
 		"astro": "astro"
 	},
 	"dependencies": {
-		"astro": "^5.12.5"
+		"@astrojs/check": "^0.9.4",
+		"@astrojs/ts-plugin": "^1.10.4",
+		"astro": "^5.12.5",
+		"typescript": "^5.8.3"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.1.3"
