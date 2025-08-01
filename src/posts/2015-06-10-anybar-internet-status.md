@@ -1,7 +1,7 @@
 ---
 title: AnyBar Internet Status
-layout: post
-redirect_from: anybar/
+slug: anybar-internet-status
+layout: ../../layouts/Post.astro
 ---
 
 <style>
@@ -28,7 +28,8 @@ Put the following [script] somewhere on your machine an `chmod +x` it.
 <p class="filename">
   ~/bin/anybar-internet
 </p>
-``` sh
+
+```sh
 quit() {
   echo -n question | $ANYBAR
   exit
@@ -55,7 +56,8 @@ Replace `$USER` with your username and put it in `~/Library/LaunchAgents/`:
 <p class="filename">
   ~/Library/LaunchAgents/com.twe4ked.anybar-internet.plist
 </p>
-``` xml
+
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">

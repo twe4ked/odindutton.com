@@ -10,7 +10,8 @@
 	},
 	"formatter": {
 		"enabled": true,
-		"indentStyle": "tab"
+		"indentStyle": "space",
+		"indentWidth": 2
 	},
 	"linter": {
 		"enabled": true,
@@ -34,7 +35,7 @@
 	"overrides": [
 		{
 			"includes": [
-				"**/*.astro",
+				"**/*.astro"
 			],
 			"linter": {
 				"rules": {

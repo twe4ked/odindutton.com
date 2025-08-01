@@ -1,22 +1,92 @@
+---
+const GIT_COMMIT = process.env.GIT_COMMIT || "unknownERROR"; // ERROR ensures we truncate
+const { title } = Astro.props;
+const site = {
+  github: {
+    build_revision: GIT_COMMIT.slice(0, 7),
+  },
+  time: new Date().getFullYear(),
+};
+
+import "../assets/stylesheets/style.sass";
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<meta charset="utf-8" />
+		<title>Odin Dutton{ title ? ` – ${title}` : ""}</title>
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 	</head>
 	<body>
-		<slot />
+		<header>
+			<a href="/"><h1>Odin Dutton</h1></a>
+			<h2>Developer</h2>
+			<ul id="social">
+				<li>
+					<a href="http://twitter.com/twe4ked" class="twitter"
+						>Twitter</a
+					>
+				</li>
+				<li>
+					<a href="https://github.com/twe4ked" class="github"
+						>Github</a
+					>
+				</li>
+				<li>
+					<a
+						href="javascript:window.location.href='mail'+['to:odindutton',['gm','ail'].join('')].join('@')+'.com'"
+						class="contact">Contact</a
+					>
+				</li>
+				<li><a href="/feed" class="feed">Feed</a></li>
+			</ul>
+			<a
+				href="https://github.com/twe4ked/odindutton.com/commit/{{ site.github.build_revision }}"
+				class="ref">{site.github.build_revision}</a
+			>
+		</header>
+
+		<div id="cover"></div>
+
+		<section id="content">
+			<section id="wrap">
+				<slot />
+			</section>
+
+			<footer>
+				<small>
+					&copy; Copyright 2013&ndash;{site.time}
+					<em>&bull;</em>
+					Odin Dutton
+					<br />
+					<a href="/no-script">&lt;noscript /&gt;</a>
+				</small>
+			</footer>
+		</section>
+
+		<script is:inline type="text/javascript">
+			(function (i, s, o, g, r, a, m) {
+				i["GoogleAnalyticsObject"] = r;
+				(i[r] =
+					i[r] ||
+					function () {
+						(i[r].q = i[r].q || []).push(arguments);
+					}),
+					(i[r].l = 1 * new Date());
+				(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m);
+			})(
+				window,
+				document,
+				"script",
+				"//www.google-analytics.com/analytics.js",
+				"ga",
+			);
+			ga("create", "UA-415680-5", "auto");
+			ga("send", "pageview");
+		</script>
 	</body>
 </html>
-
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: ../../../layouts/Layout.astro
 title: MacBook Pro Retina Early 2015
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Hrdlr Arduboy
-layout: post
+slug: hrdlr-arduboy
+layout: ../../layouts/Post.astro
 ---
 
 <style>
@@ -29,7 +30,7 @@ The comments are added my [mksprite] to make it easy to tell what frame you're r
 
 For example the first frame of the [coin][4] looks like:
 
-``` c
+```c
 const uint8_t PROGMEM coinFrames[][4] = {
   /* Frame number 0
        ##

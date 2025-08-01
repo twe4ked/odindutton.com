@@ -1,11 +1,84 @@
 ---
-import Welcome from "../components/Welcome.astro";
+import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const posts = await getCollection("posts");
+
+// https://docs.astro.build/en/guides/content-collections/
+const projects = [
+  {
+    name: "Cocktail Ratios",
+    url: "https://cocktailratios.com",
+    description: "Simple, good, cocktail ratios",
+  },
+  {
+    name: "Remember",
+    url: "https://rememberlink.com",
+    description: "Remember your bookmarks",
+  },
+  {
+    name: "fresh",
+    url: "https://github.com/freshshell/fresh",
+    description: "Bundler for your dot files",
+  },
+  {
+    name: "rspec-nc",
+    url: "https://github.com/twe4ked/rspec-nc",
+    description: "RSpec formatter for Mountain Lion's Notification Center",
+  },
+  {
+    name: "vim-diff-toggle",
+    url: "https://github.com/twe4ked/vim-diff-toggle",
+    description: "Vim plugin to speed up editing diff files",
+  },
+  {
+    name: "simple_twitter_oauth",
+    url: "https://github.com/twe4ked/simple_twitter_oauth",
+    description: "A really simple Twitter OAuth Ruby Gem",
+  },
+  {
+    name: "housemates",
+    url: "http://housemat.es",
+    description: "Organize your share house",
+    deprecated: true,
+  },
+  {
+    name: "Service Status",
+    url: "http://servicestatusapp.com",
+    description: "A set and forget app to monitor TransLink train status",
+    deprecated: true,
+  },
+];
 ---
 
 <Layout>
-	<Welcome />
+	<h2>Posts ✍️</h2>
+
+	<section id="posts">
+		{posts.map((post) => (
+		  <article>
+			<a href={`/${post.id}`}>{post.data.title}</a>
+		  </article>
+	  	))}
+	</section>
+
+	<h2 class="projects">
+		Open Source <span class="amp">&amp;</span> Other Projects 🚀
+	</h2>
+
+	<section id="projects">
+		{projects.map((project) => (
+		  <article class={project.deprecated ? "deprecated" : ""} title={project.deprecated ? "Deprecated" : undefined}>
+			{project.deprecated ? (
+			  <>
+				{project.name} &ndash; <span>{project.description}</span>
+			  </>
+			) : (
+			  <>
+				<a href={project.url}>{project.name}</a> &ndash; <span>{project.description}</span>
+			  </>
+			)}
+		  </article>
+		))}
+	</section>
 </Layout>

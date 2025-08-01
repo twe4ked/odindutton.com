@@ -1,7 +1,6 @@
 ---
-layout: default
+layout: ../layouts/Layout.astro
 title: No JavaScript
-redirect_from: no-js/
 ---
 
 <script type="text/javascript">

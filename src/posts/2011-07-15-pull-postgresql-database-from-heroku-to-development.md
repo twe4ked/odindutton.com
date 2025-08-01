@@ -1,6 +1,7 @@
 ---
 title: Pull (PostgreSQL) Database from Heroku to Your Development Environment
-layout: post
+layout: ../../layouts/Post.astro
+slug: pull-postgresql-database-from-heroku-to-development
 ---
 
 There are a lot of examples of ways to automatically back up your PostgreSQL database on Heroku using the [PG Backups](http://addons.heroku.com/pgbackups "A PostgreSQL backup addon") and pushing them up to S3, then pulling them back into your local database. This offers a lot of flexibility but you need to have Amazon S3, and I don't.
