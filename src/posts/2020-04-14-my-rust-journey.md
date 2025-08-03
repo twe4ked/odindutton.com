@@ -1,7 +1,6 @@
 ---
 title: My Rust Journey So Far
 slug: my-rust-journey
-layout: ../../layouts/Post.astro
 ---
 
 This is a summary of most of the Rust projects I've worked on in my spare time

@@ -1,6 +1,5 @@
 ---
 title: Pull (PostgreSQL) Database from Heroku to Your Development Environment
-layout: ../../layouts/Post.astro
 slug: pull-postgresql-database-from-heroku-to-development
 ---
 

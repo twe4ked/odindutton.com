@@ -1,7 +1,6 @@
 ---
 title: Hrdlr Arduboy
 slug: hrdlr-arduboy
-layout: ../../layouts/Post.astro
 ---
 
 <style>

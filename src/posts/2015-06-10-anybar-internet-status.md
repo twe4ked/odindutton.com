@@ -1,7 +1,6 @@
 ---
 title: AnyBar Internet Status
 slug: anybar-internet-status
-layout: ../../layouts/Post.astro
 ---
 
 <style>

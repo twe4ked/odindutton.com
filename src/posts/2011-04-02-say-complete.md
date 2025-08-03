@@ -1,6 +1,5 @@
 ---
 title: Command Line Tasks that Announce when they're Complete
-layout: ../../layouts/Post.astro
 slug: say-complete
 ---
 

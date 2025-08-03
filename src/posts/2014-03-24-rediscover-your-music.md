@@ -1,7 +1,6 @@
 ---
 title: Rediscovering Your Old iTunes Music
 slug: rediscover-your-music
-layout: ../../layouts/Post.astro
 ---
 
 <style>
