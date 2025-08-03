@@ -1,12 +1,9 @@
 ---
-const GIT_COMMIT = process.env.GIT_COMMIT || "unknownERROR"; // ERROR ensures we truncate
 const { title } = Astro.props;
-const site = {
-  github: {
-    build_revision: GIT_COMMIT.slice(0, 7),
-  },
-  time: new Date().getFullYear(),
-};
+
+const GIT_COMMIT = process.env.GIT_COMMIT || "unknownERROR"; // ERROR ensures we truncate
+const gitCommit = GIT_COMMIT.slice(0, 7);
+const currentYear = new Date().getFullYear();
 
 import "../assets/stylesheets/style.sass";
 ---
@@ -37,8 +34,8 @@ import "../assets/stylesheets/style.sass";
 				<li><a href="/feed" class="feed">Feed</a></li>
 			</ul>
 			<a
-				href="https://github.com/twe4ked/odindutton.com/commit/{{ site.github.build_revision }}"
-				class="ref">{site.github.build_revision}</a
+				href={`https://github.com/twe4ked/odindutton.com/commit/${gitCommit}`}
+				class="ref">{gitCommit}</a
 			>
 		</header>
 
@@ -51,7 +48,7 @@ import "../assets/stylesheets/style.sass";
 
 			<footer>
 				<small>
-					&copy; Copyright 2013&ndash;{site.time}
+					&copy; Copyright 2013&ndash;{currentYear}
 					<em>&bull;</em>
 					Odin Dutton
 					<br />
