@@ -4,6 +4,9 @@ const { title } = Astro.props;
 const GIT_COMMIT = process.env.GIT_COMMIT || "unknownERROR"; // ERROR ensures we truncate
 const gitCommit = GIT_COMMIT.slice(0, 7);
 const currentYear = new Date().getFullYear();
+const email =
+  "javascript:window.location.href='mail'+['to:odindutton',['gm','ail'].join('')].join('@')+'.com'";
+const commitHref = `https://github.com/twe4ked/odindutton.com/commit/${gitCommit}`;
 
 import "../assets/stylesheets/style.sass";
 ---
@@ -20,23 +23,11 @@ import "../assets/stylesheets/style.sass";
 			<a href="/"><h1>Odin Dutton</h1></a>
 			<h2>Software Engineer</h2>
 			<ul id="social">
-				<li>
-					<a href="https://github.com/twe4ked" class="github"
-						>Github</a
-					>
-				</li>
-				<li>
-					<a
-						href="javascript:window.location.href='mail'+['to:odindutton',['gm','ail'].join('')].join('@')+'.com'"
-						class="contact">Contact</a
-					>
-				</li>
+				<li><a href="https://github.com/twe4ked" class="github">Github</a></li>
+				<li><a href={email} class="contact">Contact</a></li>
 				<li><a href="/feed" class="feed">Feed</a></li>
 			</ul>
-			<a
-				href={`https://github.com/twe4ked/odindutton.com/commit/${gitCommit}`}
-				class="ref">{gitCommit}</a
-			>
+			<a href={commitHref} class="ref">{gitCommit}</a>
 		</header>
 
 		<div id="cover"></div>
