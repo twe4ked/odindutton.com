@@ -2,7 +2,9 @@
 import { getCollection } from "astro:content";
 import PhotoLayout from "../layouts/PhotoLayout.astro";
 
-const albums = await getCollection("photos");
+const albums = (await getCollection("photos")).sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime(),
+);
 ---
 
 <style>

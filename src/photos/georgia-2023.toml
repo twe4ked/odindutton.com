@@ -1,5 +1,6 @@
 slug = "georgia-2023"
 title = "Georgia 2023"
+date = 2023-01-01T00:00:00Z
 photos = [
     { src = "./georgia-2023/DSCF0522.jpeg", title = "Georgia" },
     { src = "./georgia-2023/DSCF0557.jpeg", title = "Georgia" },

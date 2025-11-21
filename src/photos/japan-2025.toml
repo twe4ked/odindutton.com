@@ -1,5 +1,6 @@
 slug = "japan-2025"
 title = "Japan 2025"
+date = 2025-01-01T00:00:00Z
 photos = [
     { src = "./japan-2025/DSCF6107.jpeg", title = "Eleanor, Osaka" },
     { src = "./japan-2025/DSCF6175.jpeg", title = "Kyoto" },
