@@ -56,10 +56,8 @@ const projects = [
 
 	<section id="posts">
 		{posts.map((post) => (
-		  <article>
-			<a href={`/${post.id}`}>{post.data.title}</a>
-		  </article>
-	  	))}
+		  <article><a href={`/${post.id}`}>{post.data.title}</a></article>
+	  ))}
 	</section>
 
 	<h2 class="projects">

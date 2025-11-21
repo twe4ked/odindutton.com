@@ -1,0 +1,20 @@
+---
+import { getCollection } from "astro:content";
+import PhotoLayout from "../layouts/PhotoLayout.astro";
+
+const albums = await getCollection("photos");
+---
+
+<style>
+  section {
+    margin-top: 1rem;
+  }
+</style>
+
+<PhotoLayout title="Photos" isAlbumPage={false}>
+  <section id="posts">
+    {albums.map((album) => (
+      <a href={`/photos/${album.id}`}>{album.data.title}</a>
+    ))}
+  </section>
+</PhotoLayout>

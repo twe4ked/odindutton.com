@@ -13,8 +13,6 @@ export const getStaticPaths = (async () => {
   });
 }) satisfies GetStaticPaths;
 
-type Props = InferGetStaticPropsType<typeof getStaticPaths>;
-
 const { post } = Astro.props;
 
 const date = post.filePath?.match(/(\d{4}-\d{2}-\d{2})/);

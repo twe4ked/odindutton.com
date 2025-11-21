@@ -1,5 +1,5 @@
 // @ts-check
-import { defineConfig } from "astro/config";
+import { defineConfig, passthroughImageService } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
@@ -11,5 +11,8 @@ export default defineConfig({
     "/rust": "/my-rust-journey",
 
     "/no-js": "/no-script",
+  },
+  image: {
+    service: passthroughImageService(),
   },
 });

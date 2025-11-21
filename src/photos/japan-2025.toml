@@ -1,0 +1,18 @@
+slug = "japan-2025"
+title = "Japan 2025"
+photos = [
+    { src = "./japan-2025/DSCF6107.jpeg", title = "Eleanor, Osaka" },
+    { src = "./japan-2025/DSCF6175.jpeg", title = "Kyoto" },
+    { src = "./japan-2025/DSCF6157.jpeg", title = "Kyoto" },
+    { src = "./japan-2025/DSCF6168.jpeg", title = "Kyoto" },
+    { src = "./japan-2025/DSCF6760.jpeg", title = "Chubusangaku National Park" },
+    { src = "./japan-2025/DSCF6747.jpeg", title = "Chubusangaku National Park" },
+    { src = "./japan-2025/DSCF6783.jpeg", title = "Chubusangaku National Park" },
+    { src = "./japan-2025/DSCF6177.jpeg", title = "Kyoto" },
+    { src = "./japan-2025/DSCF6215.jpeg", title = "Kyoto" },
+    { src = "./japan-2025/DSCF6276.jpeg", title = "Kyoto" },
+    { src = "./japan-2025/DSCF6808.jpeg", title = "Chubusangaku National Park" },
+    { src = "./japan-2025/DSCF6812.jpeg", title = "Chubusangaku National Park" },
+    { src = "./japan-2025/DSCF6821.jpeg", title = "Chubusangaku National Park" },
+    { src = "./japan-2025/DSCF6837.jpeg", title = "Chubusangaku National Park" },
+]

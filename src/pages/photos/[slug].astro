@@ -1,0 +1,84 @@
+---
+import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
+import type { GetStaticPaths } from "astro";
+import PhotoLayout from "../../layouts/PhotoLayout.astro";
+export const getStaticPaths = (async () => {
+  const photos = await getCollection("photos");
+  return photos.map((photo) => {
+    return {
+      params: { slug: photo.id },
+      props: { photo },
+    };
+  });
+}) satisfies GetStaticPaths;
+
+const { photo } = Astro.props;
+const photos = photo.data.photos.map(({ src, ...rest }) => ({
+  src,
+  isPortrait: src.height > src.width,
+  ...rest,
+}));
+---
+
+<style>
+  figure {
+    margin: 2rem 0;
+    text-align: center;
+  }
+
+  figure div {
+    background: #000;
+  }
+
+  body.dark figure div {
+    background: #111;
+  }
+
+  figure div img {
+    display: block;
+    margin: 0 auto 8px auto;
+  }
+
+  .photo {
+    width: 100%;
+    height: 100%;
+
+    &.portrait {
+      max-height: calc(100vh - 8rem);
+      @media (max-width: 1024px) {
+        max-height: calc(100vh - 2rem);
+      }
+    }
+
+    &.landscape {
+      max-width: calc(100vw - 8rem);
+      @media (max-width: 1024px) {
+        max-width: calc(100vw - 2rem);
+      }
+    }
+  }
+
+
+  .subtle {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 0.8em;
+  }
+
+  body.dark .subtle {
+    color: rgba(255, 255, 255, 0.6);
+  }
+</style>
+
+<PhotoLayout title={photo.data.title} isAlbumPage={true}>
+    {photos.map((p) => (
+        <figure>
+            <div>
+              <Image src={p.src} alt={p.title ?? "Unknown photo"} width={1024} class={`photo ${p.isPortrait ? "portrait" : "landscape"}`} />
+            </div>
+            <figcaption>{p.title ?? "Unknown photo"}</figcaption>
+        </figure>
+    ))}
+
+    <p class="subtle">Copyright Odin {new Date().getFullYear()}</p>
+</PhotoLayout>
