@@ -1,0 +1,20 @@
+slug = "georgia-2023"
+title = "Georgia 2023"
+photos = [
+    { src = "./georgia-2023/DSCF0522.jpeg", title = "Georgia" },
+    { src = "./georgia-2023/DSCF0557.jpeg", title = "Georgia" },
+    { src = "./georgia-2023/DSCF0590.jpeg", title = "Moon rise" },
+    { src = "./georgia-2023/DSCF0596.jpeg", title = "Georgia" },
+    { src = "./georgia-2023/DSCF0599.jpeg", title = "Georgia" },
+    { src = "./georgia-2023/DSCF0875.jpeg", title = "Mestia" },
+    { src = "./georgia-2023/DSCF0798.jpeg", title = "Mestia" },
+    { src = "./georgia-2023/DSCF0886.jpeg", title = "Georgia" },
+    { src = "./georgia-2023/DSCF0887.jpeg", title = "Georgia" },
+    { src = "./georgia-2023/DSCF0908.jpeg", title = "Georgia" },
+    { src = "./georgia-2023/DSCF0959.jpeg", title = "Georgia" },
+    { src = "./georgia-2023/IMG_5758.jpeg", title = "Gona" },
+    { src = "./georgia-2023/DSCF0977.jpeg", title = "Georgia" },
+    { src = "./georgia-2023/DSCF0979.jpeg", title = "Georgia" },
+    { src = "./georgia-2023/DSCF1218.jpeg", title = "Badlands" },
+    { src = "./georgia-2023/DSCF1222.jpeg", title = "Badlands" },
+]

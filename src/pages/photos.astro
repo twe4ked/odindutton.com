@@ -6,15 +6,21 @@ const albums = await getCollection("photos");
 ---
 
 <style>
-  section {
+  ul {
     margin-top: 1rem;
+  }
+
+  li {
+    margin-bottom: 0.3rem;
   }
 </style>
 
 <PhotoLayout title="Photos" isAlbumPage={false}>
-  <section id="posts">
+  <ul>
     {albums.map((album) => (
-      <a href={`/photos/${album.id}`}>{album.data.title}</a>
+      <li>
+        <a href={`/photos/${album.id}`}>{album.data.title}</a>
+      </li>
     ))}
-  </section>
+  </ul>
 </PhotoLayout>
