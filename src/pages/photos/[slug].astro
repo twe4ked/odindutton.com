@@ -22,8 +22,12 @@ const photos = photo.data.photos.map(({ src, ...rest }) => ({
 ---
 
 <style>
+  .container {
+    margin-top: 2rem;
+  }
+
   figure {
-    margin: 2rem 0;
+    margin-bottom: 3rem;
     text-align: center;
   }
 
@@ -37,7 +41,21 @@ const photos = photo.data.photos.map(({ src, ...rest }) => ({
 
   figure div img {
     display: block;
-    margin: 0 auto 8px auto;
+    margin: 0 auto 0.5rem auto;
+  }
+
+  .body.hide-figcaption {
+    figcaption span {
+      background: #000;
+
+      &:hover {
+        background: transparent;
+      }
+    }
+  }
+
+  body.hide-figcaption.dark figcaption span {
+    background: #fefefe;
   }
 
   .photo {
@@ -59,7 +77,6 @@ const photos = photo.data.photos.map(({ src, ...rest }) => ({
     }
   }
 
-
   .subtle {
     color: rgba(0, 0, 0, 0.6);
     font-size: 0.8em;
@@ -70,15 +87,26 @@ const photos = photo.data.photos.map(({ src, ...rest }) => ({
   }
 </style>
 
+<script>
+  document.addEventListener("click", (event) => {
+    const target = event.target as HTMLElement;
+    if (target.tagName === "IMG" && target.classList.contains("photo")) {
+      document.body.classList.toggle("hide-figcaption");
+    }
+  });
+</script>
+
 <PhotoLayout title={photo.data.title} isAlbumPage={true}>
-    {photos.map((p) => (
-        <figure>
-            <div>
-              <Image src={p.src} alt={p.title ?? "Unknown photo"} width={1024} class={`photo ${p.isPortrait ? "portrait" : "landscape"}`} />
-            </div>
-            <figcaption>{p.title ?? "Unknown photo"}</figcaption>
-        </figure>
-    ))}
+    <div class="container">
+      {photos.map((p) => (
+          <figure>
+              <div>
+                <Image src={p.src} alt={p.title ?? "Unknown photo"} width={1024} class={`photo ${p.isPortrait ? "portrait" : "landscape"}`} />
+              </div>
+              <figcaption><span>{p.title ?? "Unknown photo"}</span></figcaption>
+          </figure>
+      ))}
+    </div>
 
     <p class="subtle">Copyright Odin {new Date().getFullYear()}</p>
 </PhotoLayout>
