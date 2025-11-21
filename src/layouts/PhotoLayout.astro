@@ -72,6 +72,11 @@ const { isAlbumPage } = Astro.props;
         display: flex;
         align-items: center;
         gap: 1rem;
+        justify-content: space-between;
+    }
+
+    .flex-wrap {
+        flex-wrap: wrap;
     }
 
     .flex-grow {
@@ -82,12 +87,10 @@ const { isAlbumPage } = Astro.props;
 <Layout title={Astro.props.title}>
     <article>
         <header class="flex">
-            <div class="flex">
-                <h1>Odin's Photography{isAlbumPage && (<>&mdash;{Astro.props.title}</>)}</h1>
-                {isAlbumPage && (<a href="/photos">&larr; albums</a>)}
+            <div class="flex flex-wrap">
+                <h1>Odin&rsquo;s&nbsp;Photography{isAlbumPage && (<>&mdash;{Astro.props.title}</>)}</h1>
+                {isAlbumPage && (<a href="/photos">&larr;&nbsp;albums</a>)}
             </div>
-
-            <div class="flex-grow"></div>
 
             <button
                 id="#theme-toggle"
