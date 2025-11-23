@@ -25,8 +25,23 @@ const photos = defineCollection({
   loader: glob({ pattern: "**/*.toml", base: "./src/photos" }),
 });
 
+const projects = defineCollection({
+  schema: z.object({
+    projects: z.array(
+      z.object({
+        name: z.string(),
+        url: z.string(),
+        description: z.string(),
+        deprecated: z.boolean().optional(),
+      }),
+    ),
+  }),
+  loader: glob({ pattern: "index.toml", base: "./src/collections/projects" }),
+});
+
 // Export a single `collections` object to register your collection(s)
 export const collections = {
   posts,
   photos,
+  projects,
 };

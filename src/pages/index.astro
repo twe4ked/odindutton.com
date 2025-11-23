@@ -1,62 +1,14 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection, getEntry } from "astro:content";
 import MainLayout from "../layouts/MainLayout.astro";
 
 const posts = await getCollection("posts");
+const maybeProjects = await getEntry("projects", "index");
 
-// https://docs.astro.build/en/guides/content-collections/
-const projects = [
-  {
-    name: "Cocktail Ratios",
-    url: "https://cocktailratios.com",
-    description: "Simple, good, cocktail ratios",
-  },
-  {
-    name: "Photography",
-    url: "/photos",
-    description: "My photography",
-  },
-  {
-    name: "fresh",
-    url: "https://github.com/freshshell/fresh",
-    description: "Bundler for your dot files",
-  },
-  {
-    name: "vim-diff-toggle",
-    url: "https://github.com/twe4ked/vim-diff-toggle",
-    description: "Vim plugin to speed up editing diff files",
-  },
-  {
-    name: "Remember",
-    url: "https://rememberlink.com",
-    description: "Remember your bookmarks",
-    deprecated: true,
-  },
-  {
-    name: "rspec-nc",
-    url: "https://github.com/twe4ked/rspec-nc",
-    description: "RSpec formatter for Mountain Lion's Notification Center",
-    deprecated: true,
-  },
-  {
-    name: "simple_twitter_oauth",
-    url: "https://github.com/twe4ked/simple_twitter_oauth",
-    description: "A really simple Twitter OAuth Ruby Gem",
-    deprecated: true,
-  },
-  {
-    name: "housemates",
-    url: "http://housemat.es",
-    description: "Organize your share house",
-    deprecated: true,
-  },
-  {
-    name: "Service Status",
-    url: "http://servicestatusapp.com",
-    description: "A set and forget app to monitor TransLink train status",
-    deprecated: true,
-  },
-];
+if (!maybeProjects) {
+  throw new Error("Projects entry not found");
+}
+const projects = maybeProjects.data.projects;
 ---
 
 <MainLayout>

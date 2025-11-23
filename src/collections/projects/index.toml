@@ -1,0 +1,49 @@
+[[projects]]
+name = "Cocktail Ratios"
+url = "https://cocktailratios.com"
+description = "Simple, good, cocktail ratios"
+
+[[projects]]
+name = "Photography"
+url = "/photos"
+description = "My photography"
+
+[[projects]]
+name = "fresh"
+url = "https://github.com/freshshell/fresh"
+description = "Bundler for your dot files"
+
+[[projects]]
+name = "vim-diff-toggle"
+url = "https://github.com/twe4ked/vim-diff-toggle"
+description = "Vim plugin to speed up editing diff files"
+
+[[projects]]
+name = "Remember"
+url = "https://rememberlink.com"
+description = "Remember your bookmarks"
+deprecated = true
+
+[[projects]]
+name = "rspec-nc"
+url = "https://github.com/twe4ked/rspec-nc"
+description = "RSpec formatter for Mountain Lion's Notification Center"
+deprecated = true
+
+[[projects]]
+name = "simple_twitter_oauth"
+url = "https://github.com/twe4ked/simple_twitter_oauth"
+description = "A really simple Twitter OAuth Ruby Gem"
+deprecated = true
+
+[[projects]]
+name = "housemates"
+url = "https://housemat.es"
+description = "Organize your share house"
+deprecated = true
+
+[[projects]]
+name = "Service Status"
+url = "https://servicestatusapp.com"
+description = "A set and forget app to monitor TransLink train status"
+deprecated = true
