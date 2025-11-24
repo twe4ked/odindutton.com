@@ -2,6 +2,8 @@
 import Layout from "./Layout.astro";
 
 const { isAlbumPage } = Astro.props;
+
+import "../assets/stylesheets/reset.css";
 ---
 
 <head>
@@ -28,7 +30,20 @@ const { isAlbumPage } = Astro.props;
     }
 </script>
 
-<style>
+<style is:global>
+    body {
+        font-family: 'Helvetica Neue', Arial, Helvetica, Sans-Serif;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+        font-family: Georgia, Times, 'Times New Roman', serif;
+    }
+
+    a {
+        color: #000000;
+    }
+
     .theme-toggle {
         padding: 0.5rem 0.5rem 0.3rem;
         background: none;
@@ -64,10 +79,16 @@ const { isAlbumPage } = Astro.props;
         font-size: 0.5em;
     }
 
-    h1 a:hover {
-        text-decoration: underline;
+    a {
+        color:#000000;
     }
 
+    a:visited {
+        color: #000000;
+    }
+</style>
+
+<style>
     .flex {
         display: flex;
         align-items: center;
@@ -77,10 +98,6 @@ const { isAlbumPage } = Astro.props;
 
     .flex-wrap {
         flex-wrap: wrap;
-    }
-
-    .flex-grow {
-        flex-grow: 1;
     }
 </style>
 

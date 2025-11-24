@@ -44,13 +44,11 @@ const photos = photo.data.photos.map(({ src, ...rest }) => ({
     margin: 0 auto 0.5rem auto;
   }
 
-  .body.hide-figcaption {
-    figcaption span {
-      background: #000;
+  body.hide-figcaption figcaption span {
+    background: #000;
 
-      &:hover {
-        background: transparent;
-      }
+    &:hover {
+      background: transparent;
     }
   }
 
