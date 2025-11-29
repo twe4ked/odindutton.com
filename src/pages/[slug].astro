@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from "astro:content";
 import type { GetStaticPaths, InferGetStaticPropsType } from "astro";
+import { getPostDate } from "../indexHelpers";
 import MainLayout from "../layouts/MainLayout.astro";
 
 export const getStaticPaths = (async () => {
@@ -15,11 +16,7 @@ export const getStaticPaths = (async () => {
 
 const { post } = Astro.props;
 
-const date = post.filePath?.match(/(\d{4}-\d{2}-\d{2})/);
-if (!date) {
-  throw new Error("Post date not found in file path");
-}
-const d = new Date(date[0]);
+const date = getPostDate(post.filePath);
 const { Content } = await render(post);
 ---
 
@@ -28,7 +25,7 @@ const { Content } = await render(post);
     <header>
       <h1>{post.data.title}</h1>
       <div class=meta>
-        <time>Posted on {d.toISOString().split("T")[0]}</time>
+        <time>Posted on {date.toISOString().split("T")[0]}</time>
         <span>by Odin Dutton</span>
       </div>
     </header>

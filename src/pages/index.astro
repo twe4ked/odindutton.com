@@ -1,8 +1,15 @@
 ---
 import { getCollection, getEntry } from "astro:content";
+import { getPostDate } from "../indexHelpers";
 import MainLayout from "../layouts/MainLayout.astro";
 
-const posts = await getCollection("posts");
+const posts = (await getCollection("posts"))
+  .map((post) => ({
+    date: getPostDate(post.filePath),
+    ...post,
+  }))
+  .sort((a, b) => b.date.getTime() - a.date.getTime());
+
 const maybeProjects = await getEntry("projects", "index");
 
 if (!maybeProjects) {
