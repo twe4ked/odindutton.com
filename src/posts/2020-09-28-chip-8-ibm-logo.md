@@ -1,12 +1,14 @@
 ---
-title: Building a CHIP-8 interpreter for the IBM Logo ROM
+title: Rendering the IBM Logo by Building a CHIP-8 Interpreter
 layout: post
 redirect_from: chip-8/
 ---
 
-This post will guide you through the beginnings of writing a CHIP-8 interpreter.
-We're going to focus on the 5 instructions needed to run the IBM logo ROM. This
-will give you a solid base to continue on your own to finish the rest of the
+This post will guide you through the beginnings of writing a CHIP-8 interpreter,
+a simple virtual machine designed in the 1970s.
+
+We're going to focus on the 5 (of the 36) instructions needed to run the "IBM logo" ROM.
+This will give you a solid base to continue on your own to finish the rest of the
 instructions and add input support for interactivity.
 
 We're going to be using Rust, but this could be implemented in whatever you
@@ -30,10 +32,10 @@ though, so consider giving it a go!
 ## What is CHIP-8?
 <a id="what-is-a-chip-8"></a>
 
-CHIP-8 is an interpreted programming language from the 1970s. It's technically
+CHIP-8 is a virtual machine from the 1970s. It's technically
 not an _emulator_ as we're not emulating real hardware, but it is a very
-similar experience to writing an emulator so it can be easy to think of it as
-one.
+similar experience to writing an emulator so it's a good first project to
+get a feel for it.
 
 According to [Cowgod's CHIP-8 Technical Reference][technical-reference] system
 has the following features:
@@ -61,8 +63,8 @@ fair bit, so keep that open too.
 
 We're going to start by loading the ROM so we've got a program to work with.
 
-You can find the IBM Logo ROM by searching, but it's tiny so I'll paste it
-here, please don't sue me IBM!
+You can find a copy of the IBM Logo ROM to download on various sites,
+but it's tiny so I'll paste a hexdump here:
 
 ```
 $ hexdump ~/Downloads/IBM\ Logo.ch8
@@ -78,7 +80,8 @@ $ hexdump ~/Downloads/IBM\ Logo.ch8
 0000084
 ```
 
-Some quick formatting gives us a Rust array.
+You'll likely want a way to load arbitrary ROM files from disk at some point,
+but for now we can simply represent the ROM in our program as an array of bytes:
 
 ```rust
 const IBM_LOGO_ROM: [u8; 132] = [
@@ -94,12 +97,11 @@ const IBM_LOGO_ROM: [u8; 132] = [
 ];
 ```
 
-We want to load the program into memory. CHIP-8 interpreters can access up to
-4KB of memory, from `0x000` to `0xfff`, we're going to represent this as an
-array (`[u8; 0xfff]`).
+We want to load the program into the memory of our VM.
+CHIP-8 interpreters can access up to 4KB of memory, from `0x000` to `0xfff`,
+we're going to represent this as an array of `u8`s with a length of `0xfff` (`[u8; 0xfff]`).
 
-We're going to wrap this array in a struct that we're going to use to read and
-write.
+We're going to wrap this array in a struct to represent our memory with functions for the VM to read and write.
 
 ```rust
 const MEMORY_LENGTH: usize = 0xfff;
@@ -136,11 +138,13 @@ const IBM_LOGO_ROM: [u8; 132] = [
     0x00, 0xe0, 0xa2, 0x2a, 0x60, 0x0c, 0x61, 0x08,
     // SNIP
 ];
+// Technical Reference program start address
 const PROGRAM_OFFSET: u16 = 0x200;
 
 fn main() {
     let mut memory = Memory::new();
 
+    // Load rom into memory
     for (address, value) in IBM_LOGO_ROM.iter().enumerate() {
         memory.write(address as u16 + PROGRAM_OFFSET, *value);
     }
@@ -805,6 +809,7 @@ Here's [the finished project][chip-8-ibm] on my GitHub.
 
 The real rest of the owl.
 
+- Render to a screen in a loop
 - Keyboard input
 - Stack for the `CALL` instruction
 - Delay and sound timers
