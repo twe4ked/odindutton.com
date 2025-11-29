@@ -2,6 +2,7 @@
 title: Rendering the IBM Logo by Building a CHIP-8 Interpreter
 layout: post
 redirect_from: chip-8/
+slug: chip-8-logo
 ---
 
 This post will guide you through the beginnings of writing a CHIP-8 interpreter,
